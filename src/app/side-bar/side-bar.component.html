@@ -1,0 +1,20 @@
+<div class="sidebar-container" fxflex="100" fxLayout="column">
+  <div fxFlex="4" fxLayout="row" fxLayoutAlign="start center" class="sidebar-container--contact">
+    <i class="sidebar-container--contact-icon pi pi-shield"></i>
+    <h3 class="sidebar-container--space">ContactBlaster</h3>
+  </div>
+  <div fxFlex="96" fxLayout="column" fxLayoutAlign="space-between" class="sidebar-container--content">
+    <div fxLayout="column">
+      <div fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of items">
+        <i class="sidebar-container--icon {{item.icon}}"></i>
+        <h5 class="sidebar-container--space">{{item.label}}</h5>
+      </div>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="end start">
+      <div fxLayout="row" fxLayoutAlign="start center" *ngFor="let list of status">
+        <i class="sidebar-container--icon {{list.icon}}"></i>
+        <h5 class="sidebar-container--space">{{list.label}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
