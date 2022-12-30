@@ -1,1 +1,55 @@
-<p>dashboard works!</p>
+<div  fxLayout="column" class="dashboard-container">
+  <div fxLayout="column" class="graph-container" >
+    <div fxFlexFill fxLayoutAlign="center center">
+      <p-chart type="line" [data]="lineStylesData" [options]="basicOptions"></p-chart>
+    </div>
+    <p fxLayoutAlign="center center">Days [2022]</p>
+  </div>
+  <div fxLayout="column" class="card-container">
+    <div fxlayout="row" fxLayoutAlign="space-between center" class="card-title">
+      <h5>How to use the portal</h5>
+      <span  fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+        <p>3 of 4</p>
+        <i class="pi pi-arrow-circle-left"></i>
+        <i class="pi pi-arrow-circle-right"></i>
+      </span>
+    </div>
+    <div fxLayout="row">
+      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="24px" *ngFor="let item of [1, 2, 3, 4]" class="card-container--img">
+        <p-image src="assets/image/dashboard-img.svg" alt="Image" width="340">
+          <ng-template pTemplate="indicator">
+            Indicator Content
+          </ng-template>
+        </p-image>
+        <div fxLayout="column" class="image-caption">
+          <div fxLayout="row" >
+            <div class="image-icon">
+              <i class="pi pi-stopwatch"></i>
+            </div>
+            <p>12 Min</p>
+          </div>
+          <p>How to add list</p>
+        </div>
+
+        <!--<p-image src="assets/image/dashboard-img.svg" alt="Image" width="360">
+          <ng-template pTemplate="indicator">
+            Indicator Content
+          </ng-template>
+        </p-image>
+        <p-image src="assets/image/dashboard-img.svg" alt="Image" width="360">
+          <ng-template pTemplate="indicator">
+            Indicator Content
+          </ng-template>
+        </p-image>
+        <p-image src="assets/image/dashboard-img.svg" alt="Image" width="360">
+          <ng-template pTemplate="indicator">
+            Indicator Content
+          </ng-template>
+        </p-image>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
