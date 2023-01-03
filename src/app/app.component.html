@@ -1,9 +1,10 @@
 
-<div fxLayout="row" class="app-container">
+<div  fxLayout="row" class="app-container">
   <app-side-bar></app-side-bar>
   <div fxLayout="column" fxLayoutGap="24px">
     <app-header></app-header>
     <app-sub-header class="sub-header-component"></app-sub-header>
-    <app-dashboard></app-dashboard>
+<!--    <app-dashboard *ngIf="!list"></app-dashboard>-->
+    <app-list></app-list>
   </div>
 </div>

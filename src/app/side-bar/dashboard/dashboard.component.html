@@ -1,7 +1,7 @@
 <div  fxLayout="column" class="dashboard-container">
-  <div fxLayout="column" class="graph-container" >
-    <div fxFlexFill fxLayoutAlign="center center">
-      <p-chart type="line" [data]="lineStylesData" [options]="basicOptions"></p-chart>
+  <div fxLayoutAlign="center center" class="width--full" >
+    <div fxFlex="70" class="dashboard-graph">
+      <p-chart type="line" [data]="lineStylesData" height="300" [options]="options"></p-chart>
     </div>
     <p fxLayoutAlign="center center">Days [2022]</p>
   </div>
@@ -22,30 +22,14 @@
           </ng-template>
         </p-image>
         <div fxLayout="column" class="image-caption">
-          <div fxLayout="row" >
-            <div class="image-icon">
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <div class="image-caption__image-icon">
               <i class="pi pi-stopwatch"></i>
             </div>
             <p>12 Min</p>
           </div>
           <p>How to add list</p>
         </div>
-
-        <!--<p-image src="assets/image/dashboard-img.svg" alt="Image" width="360">
-          <ng-template pTemplate="indicator">
-            Indicator Content
-          </ng-template>
-        </p-image>
-        <p-image src="assets/image/dashboard-img.svg" alt="Image" width="360">
-          <ng-template pTemplate="indicator">
-            Indicator Content
-          </ng-template>
-        </p-image>
-        <p-image src="assets/image/dashboard-img.svg" alt="Image" width="360">
-          <ng-template pTemplate="indicator">
-            Indicator Content
-          </ng-template>
-        </p-image>-->
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 .dashboard-container {
   width: auto;
+  background-color: floralwhite;
 }
 
 .graph-container {
@@ -22,11 +23,10 @@
     bottom: 0;
     padding: 12px 0 12px 4px;
     color: white;
-    background-color: #343634;
+    background-color: rgba(41,33,37,0.67);
+    &__image-icon {
+      margin-right: 12px;
+      margin-left: 18px;
+    }
   }
-}
-
-.image-icon {
-  margin-right: 12px;
-  margin-left: 18px;
 }
