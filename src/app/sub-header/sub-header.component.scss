@@ -2,9 +2,9 @@
 
 .subheader-container {
   padding: 0 18px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid $black;
   width: 94rem;
-  background-color: floralwhite;
+  background-color: $floralwhite;
 }
 .p {
   color: $p-light-grey;
