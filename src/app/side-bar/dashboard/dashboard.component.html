@@ -1,10 +1,11 @@
 <div  fxLayout="column" class="dashboard-container">
-  <div fxLayout="column" class="graph-container" >
-    <div fxFlexFill fxLayoutAlign="center center">
-      <p-chart type="line" [data]="lineStylesData" [options]="basicOptions"></p-chart>
+  <div fxLayoutAlign="center center" class="width--full" >
+    <p>No. of contacts</p>
+    <div fxFlex="70" class="dashboard-container__graph">
+      <p-chart type="line" [data]="lineStylesData" height="300" [options]="options"></p-chart>
     </div>
-    <p fxLayoutAlign="center center">Days [2022]</p>
   </div>
+  <p fxLayoutAlign="center center">Days [2022]</p>
   <div fxLayout="column" class="card-container">
     <div fxlayout="row" fxLayoutAlign="space-between center" class="card-title">
       <h5>How to use the portal</h5>
@@ -22,13 +23,13 @@
           </ng-template>
         </p-image>
         <div fxLayout="column" class="image-caption">
-          <div fxLayout="row" >
-            <div class="image-icon">
+          <div fxLayout="row" fxLayoutAlign="start center">
+            <div class="image-caption__image-icon">
               <i class="pi pi-stopwatch"></i>
             </div>
             <p>12 Min</p>
           </div>
-          <p>How to add list</p>
+          <p class="image-caption__image-description">How to add list</p>
         </div>
       </div>
     </div>
