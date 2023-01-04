@@ -7,33 +7,33 @@
   &__graph {
     margin: 0 16px;
   }
-}
 
-.card-title {
-  padding: 0 20px;
-  //width: 94rem;
-}
-.card-container--img {
-  margin-left: 24px;
-  position: relative;
-  height: 256px;
-
-  .image-caption {
-    position: absolute;
-    width: 93%;
-    bottom: 0;
-    padding: 12px 0 12px 4px;
-    color: white;
-    background-color: rgba(41,33,37,0.67);
-    &__image-icon {
-      margin-right: 12px;
-      margin-left: 16px;
+  &__card-title {
+      padding: 0 20px;
     }
-    &__image-description {
-      margin-left: 16px;
+  &__card-img {
+    margin-left: 24px;
+    position: relative;
+    height: 256px;
+    &-caption {
+      position: absolute;
+      width: 93%;
+      bottom: 0;
+      padding: 12px 0 12px 4px;
+      color: white;
+      background-color: rgba(41,33,37,0.67);
+      height: 78px;
+      &-icon {
+        margin-right: 12px;
+        margin-left: 16px;
+      }
+      &-description {
+        margin-left: 16px;
+      }
     }
   }
 }
+
 .p {
   color: $p-light-grey;
 }

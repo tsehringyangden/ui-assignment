@@ -1,5 +1,7 @@
 @import "src/assets/styles/variables";
-
+* {
+  overflow-x: hidden;
+}
 .app-container {
   background-color: rgba(0, 0, 0, 0.12);
 }

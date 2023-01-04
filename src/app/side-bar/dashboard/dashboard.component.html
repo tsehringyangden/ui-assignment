@@ -1,4 +1,4 @@
-<div  fxLayout="column" class="dashboard-container">
+<div fxLayout="column" class="dashboard-container">
   <div fxLayoutAlign="center center" class="width--full" >
     <p>No. of contacts</p>
     <div fxFlex="70" class="dashboard-container__graph">
@@ -6,8 +6,8 @@
     </div>
   </div>
   <p fxLayoutAlign="center center">Days [2022]</p>
-  <div fxLayout="column" class="card-container">
-    <div fxlayout="row" fxLayoutAlign="space-between center" class="card-title">
+  <div fxLayout="column">
+    <div fxlayout="row" fxLayoutAlign="space-between center" class="dashboard-container__card-title">
       <h5>How to use the portal</h5>
       <span  fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
         <p>3 of 4</p>
@@ -16,20 +16,20 @@
       </span>
     </div>
     <div fxLayout="row">
-      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="24px" *ngFor="let item of [1, 2, 3, 4]" class="card-container--img">
+      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="24px" *ngFor="let item of [1, 2, 3, 4]" class="dashboard-container__card-img">
         <p-image src="assets/image/dashboard-img.svg" alt="Image" width="340">
           <ng-template pTemplate="indicator">
             Indicator Content
           </ng-template>
         </p-image>
-        <div fxLayout="column" class="image-caption">
-          <div fxLayout="row" fxLayoutAlign="start center">
-            <div class="image-caption__image-icon">
+        <div fxLayout="column" class="dashboard-container__card-img-caption">
+          <div fxFlex="30" fxLayout="row" fxLayoutAlign="start center">
+            <div class="dashboard-container__card-img-icon">
               <i class="pi pi-stopwatch"></i>
             </div>
             <p>12 Min</p>
           </div>
-          <p class="image-caption__image-description">How to add list</p>
+          <p class="dashboard-container__card-img-description">How to add list</p>
         </div>
       </div>
     </div>
