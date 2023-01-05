@@ -18,7 +18,6 @@ export class DashboardComponent {
       labels: ['Jan 1','Jan 3','Jan 6','Jan 9','Jan 12','Jan 15','Jan 18','Jan 21','Jan 24','Jan 27','Jan 30'],
       datasets: [
         {
-          // label: 'Third Dataset',
           data: [12, 51, 62, 33, 21, 62, 45,33,44,22,11],
           fill: true,
           borderColor: '#6372F1',
