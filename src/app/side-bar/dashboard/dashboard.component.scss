@@ -4,7 +4,7 @@
   width: auto;
   &__graph {
     margin: 0 16px;
-    background-color: $floralwhite;
+    background-color: $floral-white;
   }
   &__card-title {
       padding: 0 20px;
@@ -27,8 +27,4 @@
       margin-left: 16px;
     }
   }
-}
-
-.p {
-  color: $p-light-grey;
 }

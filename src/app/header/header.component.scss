@@ -4,12 +4,12 @@
   border: 1px solid $black;
   width: 97.2rem;
   height: 70px;
-  background-color: $floralwhite;
+  background-color: $floral-white;
   &__description {
     font-family: Roboto;
+    &-detail {
+      color: $p-light-grey;
+    }
   }
-}
-.p,span {
-  color: $p-light-grey;
 }
 
