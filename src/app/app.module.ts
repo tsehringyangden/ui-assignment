@@ -19,6 +19,8 @@ import { ListComponent } from './side-bar/list/list.component';
 import {TableModule} from 'primeng/table';
 import {CheckboxModule} from 'primeng/checkbox';
 import {PaginatorModule} from "primeng/paginator";
+import { SubHeaderListComponent } from './side-bar/list/sub-header-list/sub-header-list.component';
+import {InputTextModule} from "primeng/inputtext";
 
 @NgModule({
   declarations: [
@@ -28,23 +30,25 @@ import {PaginatorModule} from "primeng/paginator";
     SubHeaderComponent,
     DashboardComponent,
     ListComponent,
+    SubHeaderListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SplitButtonModule,
-    AccordionModule,
-    FormsModule,
-    TabMenuModule,
-    FlexModule,
-    RatingModule,
-    RippleModule,
-    ChartModule,
-    ImageModule,
-    TableModule,
-    CheckboxModule,
-    PaginatorModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        SplitButtonModule,
+        AccordionModule,
+        FormsModule,
+        TabMenuModule,
+        FlexModule,
+        RatingModule,
+        RippleModule,
+        ChartModule,
+        ImageModule,
+        TableModule,
+        CheckboxModule,
+        PaginatorModule,
+        InputTextModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

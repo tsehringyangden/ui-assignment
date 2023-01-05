@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import {ActivatedRoute, Router} from "@angular/router";
-import {MessageService} from "primeng/api";
-
+import {ActivatedRoute, Router} from '@angular/router';
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent {
-  // list?: boolean = this.activatedRoute.snapshot.queryParams['action'] === 'list';
   users: any = [
     {
       list_item: 'SEO Agiencies',
@@ -49,16 +46,5 @@ export class ListComponent {
   ]
   totalRecords: any;
 
-  // constructor(private activatedRoute: ActivatedRoute) {
-  // }
-  constructor(private router:Router) {}
-
-  label() {
-    this.router.navigate([`app-list`], {
-      queryParams: {
-        action: 'list'
-      }
-    })
-  }
 
 }

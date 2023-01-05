@@ -4,7 +4,7 @@
   width: 256px;
   height: 852px;
   background-color: floralwhite;
-  &--contact {
+  &__contact {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     &-icon {
       margin-left: 24px;
@@ -14,16 +14,19 @@
       color: blueviolet;
     }
   }
-  &--space{
+  &__space{
     margin-left: 8px;
   }
-  &--icon {
-    color: rgba(0, 0, 0, 0.64);
-  }
-  &--icon:hover {
+  &__space:hover {
     color: blueviolet;
   }
-  &--content {
+  &__icon {
+    color: rgba(0, 0, 0, 0.64);
+  }
+  &__icon:hover {
+    color: blueviolet;
+  }
+  &__content {
     margin-left: 24px;
   }
 }
