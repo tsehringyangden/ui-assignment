@@ -1,3 +1,4 @@
+<app-list-header></app-list-header>
 <app-sub-header-list></app-sub-header-list>
 <div class="list-container">
   <p-table #dt [value]="user">
@@ -28,7 +29,11 @@
       </tr>
     </ng-template>
   </p-table>
-  <p-paginator  text="Items per page 10"class="list-container__pagination" [rowsPerPageOptions]="[10,20,30]"  [rows]="3" [totalRecords]="120" fxLayoutGap="0px" >
-
-  </p-paginator>
+  <div fxLayout="row" fxLayoutGap="50%" class="list-container__paginator">
+    <span fxLayout="row" fxLayoutGap="24px">
+      <p>Items per page 10</p>
+      <i class="pi pi-angle-down"></i>
+    </span>
+    <p-paginator class="list-container__pagination"  [rows]="3" [totalRecords]="120" fxLayoutGap="0px" ></p-paginator>
+  </div>
 </div>

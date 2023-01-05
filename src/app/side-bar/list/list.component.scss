@@ -1,7 +1,12 @@
 .list-container {
-  width: 94rem;
+  width: 93rem;
   margin-left: 24px;
   &__pagination {
-    border-radius: 8px;
+    //border-radius: 8px;
+    background-color: blueviolet;
   }
+}
+
+.ist-container__paginator {
+  background-color: floralwhite;
 }
