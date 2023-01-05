@@ -5,6 +5,7 @@ import {ListComponent} from "./side-bar/list/list.component";
 
 const routes: Routes = [
   { path: '', component: DashboardComponent},
+  {path: 'dashboard', component: DashboardComponent},
   { path: 'listing', component: ListComponent}
 ];
 

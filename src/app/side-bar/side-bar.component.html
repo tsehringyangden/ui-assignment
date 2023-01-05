@@ -6,13 +6,13 @@
   </div>
   <div fxFlex="96" fxLayout="column" fxLayoutAlign="space-between" class="sidebar-container__content">
     <div fxLayout="column">
-      <div fxLayout="row" fxLayoutAlign="start center" >
+      <div fxLayout="row" fxLayoutAlign="start center">
         <i class="pi pi-fw pi-microsoft"></i>
-        <h5 class="sidebar-container__space">DashBoard</h5>
+        <h5 class="sidebar-container__space" (click)="dashboard()">DashBoard</h5>
       </div>
       <div fxLayout="row" fxLayoutAlign="start center" (click)="list()">
         <i class="pi pi-fw pi-align-justify"></i>
-        <h5 class="sidebar-container__space">List</h5>
+        <h5 class="sidebar-container__space" (click)="list()">List</h5>
       </div>
       <div fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of items">
         <i class="sidebar-container__icon {{item.icon}}"></i>

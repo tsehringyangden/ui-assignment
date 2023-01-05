@@ -22,6 +22,7 @@ import {PaginatorModule} from "primeng/paginator";
 import { SubHeaderListComponent } from './side-bar/list/sub-header-list/sub-header-list.component';
 import {InputTextModule} from "primeng/inputtext";
 import {AvatarModule} from "primeng/avatar";
+import { ListHeaderComponent } from './side-bar/list/list-header/list-header.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import {AvatarModule} from "primeng/avatar";
     DashboardComponent,
     ListComponent,
     SubHeaderListComponent,
+    ListHeaderComponent,
   ],
   imports: [
     BrowserModule,
