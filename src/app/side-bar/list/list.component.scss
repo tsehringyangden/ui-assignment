@@ -1,12 +1,12 @@
+@import 'src/assets/styles/variables';
+
 .list-container {
   width: 93rem;
   margin-left: 24px;
-  &__pagination {
-    //border-radius: 8px;
-    background-color: blueviolet;
+  &__paginator {
+    background-color: $floral-white;
+    &-detail {
+      margin-left: 16px;
+    }
   }
-}
-
-.ist-container__paginator {
-  background-color: floralwhite;
 }

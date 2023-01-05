@@ -1,20 +1,43 @@
+@import 'src/assets/styles/variables';
+
 .subheader-container {
-  padding: 8px 20px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 8px 4px;
+  border: 1px solid $blue-12;
   width: 93rem;
-  background-color: floralwhite;
+  background-color: $floral-white;
   margin-left: 24px;
   margin-bottom: 16px;
-  //height: 62px;
-  &__left {
+  &__content {
     height: 40px;
     margin: 0 16px;
-    &-caption {
+    &-header {
+      padding-bottom: 12px;
+    }
+
+    &-avatar {
+      background-color: $dodger-blue;
+      color: $white;
+    }
+    &-heading {
+      margin-bottom: -8px;
+    }
+    &-sub-text {
+      font-size: 14px;
     }
   }
-  &__search {
-    &-btn:hover {
-      color: blueviolet;
-    }
+  &__search:hover {
+    color: $american-violet;
+    cursor: pointer;
   }
+  &__input--height {
+    height: 40px;
+  }
+}
+::ng-deep.p-avatar {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.tt {
+  height: 40px;
 }

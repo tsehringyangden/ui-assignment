@@ -1,14 +1,13 @@
 <div fxLayout="row" fxLayoutAlign="space-between" class="header-container">
   <div fxlayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
-    <span><i class="pi pi-bars "></i>
-      <i class="pi pi-angle-left"></i></span>
-<!--    TODO: in dashboard page-->
-    <h4 *ngIf="!list" >DashBoard</h4>
-<!--    TODO: in listing page-->
-    <h4 *ngIf="list" >Manage List</h4>
+    <span>
+      <i class="pi pi-bars"></i>
+      <i class="pi pi-angle-left"></i>
+    </span>
+    <h4>DashBoard</h4>
   </div>
-  <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="16px" class="header-container--btn">
-    <span><b>8752</b>Avaliable Credits</span>
+  <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="16px" class="header-container__description">
+    <span class="header-container__description-detail"><b>8752</b>Avaliable Credits</span>
     <i class="pi pi-database"></i>
     <button pButton pRipple type="button" label="GET MORE CREDITS" class="p-button-outlined"></button>
     <i class="pi pi-arrow-circle-right"></i>

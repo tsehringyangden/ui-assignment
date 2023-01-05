@@ -1,8 +1,14 @@
+@import "src/assets/styles/variables";
+
 .subheader-container {
   padding: 0 18px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid $black-12;
   width: 94rem;
-  background-color: floralwhite;
   margin-left: 24px;
-  //margin-top: 24px;
+  background-color: $floral-white;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.p {
+  color: $black-62;
 }

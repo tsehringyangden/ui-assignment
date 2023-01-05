@@ -1,9 +1,11 @@
+@import 'src/assets/styles/variables';
+
 .header-container {
   padding: 0 24px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid $blue-12;
   width: 97.2rem;
-  height: 72px;
-  background-color: floralwhite;
+  height: 68px;
+  background-color: $floral-white;
   margin-bottom: 16px;
   &--btn {
     font-family: Roboto;
