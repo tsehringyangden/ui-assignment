@@ -8,17 +8,13 @@
   height: 62px;
   &__left {
     height: 40px;
+    margin: 0 16px;
     &-caption {
-      height: 20px;
     }
   }
   &__search {
-    height: 40px;
     &-btn:hover {
       color: blueviolet;
     }
-  }
-  &__search:hover {
-    //color: blueviolet;
   }
 }

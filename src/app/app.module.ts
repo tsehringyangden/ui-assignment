@@ -21,6 +21,7 @@ import {CheckboxModule} from 'primeng/checkbox';
 import {PaginatorModule} from "primeng/paginator";
 import { SubHeaderListComponent } from './side-bar/list/sub-header-list/sub-header-list.component';
 import {InputTextModule} from "primeng/inputtext";
+import {AvatarModule} from "primeng/avatar";
 
 @NgModule({
   declarations: [
@@ -32,23 +33,24 @@ import {InputTextModule} from "primeng/inputtext";
     ListComponent,
     SubHeaderListComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        SplitButtonModule,
-        AccordionModule,
-        FormsModule,
-        TabMenuModule,
-        FlexModule,
-        RatingModule,
-        RippleModule,
-        ChartModule,
-        ImageModule,
-        TableModule,
-        CheckboxModule,
-        PaginatorModule,
-        InputTextModule,
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SplitButtonModule,
+    AccordionModule,
+    FormsModule,
+    TabMenuModule,
+    FlexModule,
+    RatingModule,
+    RippleModule,
+    ChartModule,
+    ImageModule,
+    TableModule,
+    CheckboxModule,
+    PaginatorModule,
+    InputTextModule,
+    AvatarModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
   basicData: any;
-
   lineStylesData: any;
-
   basicOptions: any;
   options = {
     maintainAspectRatio: false,

@@ -1,15 +1,15 @@
-<div fxlayout="row" fxLayoutAlign="start center" fxLayoutGap="686px" class="subheader-container">
-  <div fxLayout="row" class="subheader-container__left">
-    <i class="pi pi-book"></i>
-    <span fxLayout="column" class="subheader-container__left-caption">
-      <h4>List</h4>
+<div fxlayout="row" fxLayoutAlign="space-between center" class="subheader-container">
+  <div fxFlex="40" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="12px" class="subheader-container__left">
+    <p-avatar  icon="pi pi-book" [style]="{'background-color':'#2196F3', 'color': '#ffffff'}"></p-avatar>
+    <div class="subheader-container__left-caption">
+      <p>List (256)</p>
       <p>Here you will find all the list items in this system</p>
-    </span>
+    </div>
   </div>
   <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="16px" class="subheader-container__search">
     <span class="p-input-icon-right">
       <i class="pi pi pi-search"></i>
-      <input type="text" pInputText placeholder="Search by text" />
+      <input type="text" pInputText placeholder="Search list by name" />
     </span>
     <p-button label="UPLOAD LIST" icon="pi pi-file-import"></p-button>
   </div>
