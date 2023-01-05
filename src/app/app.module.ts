@@ -13,6 +13,8 @@ import { HeaderComponent } from './header/header.component';
 import {RippleModule} from "primeng/ripple";
 import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { DashboardComponent } from './side-bar/dashboard/dashboard.component';
+import {ChartModule} from "primeng/chart";
+import {ImageModule} from "primeng/image";
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { DashboardComponent } from './side-bar/dashboard/dashboard.component';
         FlexModule,
         RatingModule,
         RippleModule,
+        ChartModule,
+        ImageModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
