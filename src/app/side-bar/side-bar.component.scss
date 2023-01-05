@@ -2,7 +2,7 @@
 
 .sidebar-container {
   padding:16px 0;
-  border:1px solid $black;
+  border:1px solid $black-12;
   width: 256px;
   height: 852px;
   background-color: $floral-white;
@@ -23,7 +23,7 @@
     margin-left: 8px;
   }
   &--icon {
-    color: $black-icon;
+    color: $black-64;
   }
   &--icon:hover {
     color: $american-violet;
