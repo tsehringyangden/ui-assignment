@@ -1,7 +1,7 @@
 <app-list-header></app-list-header>
 <app-sub-header-list></app-sub-header-list>
 <div class="list-container">
-  <p-table #dt [value]="user">
+  <p-table #dt [value]="users">
     <ng-template pTemplate="header">
       <tr>
         <th>
@@ -12,15 +12,15 @@
         <th pSortableColumn="category">Actions <p-sortIcon field="category"></p-sortIcon></th>
       </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-user>
+    <ng-template pTemplate="body" let-users>
       <tr class="p-selectable-row">
         <td>
-          <p-tableCheckbox [value]="user" data-cy="checkBox"></p-tableCheckbox>
+          <p-tableCheckbox [value]="users" data-cy="checkBox"></p-tableCheckbox>
         </td>
         <td fxLayoutAlign="start center">
-          {{user.list_item}}
+          {{users.list_item}}
         </td>
-        <td>{{user.Create_on}}</td>
+        <td>{{users.Create_on}}</td>
         <td><div fxLayoutGap="20px">
           <i class="pi pi-pencil"></i>
           <i class="pi pi-trash"></i>

@@ -6,7 +6,7 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent {
-  user: any = [
+  users: any = [
     {
       list_item: 'SEO Agiencies',
       Create_on: '21 May 2022',
