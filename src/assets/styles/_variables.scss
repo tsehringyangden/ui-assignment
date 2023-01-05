@@ -1,8 +1,9 @@
 $primary-color: #6372F1;
-$p-light-grey: rgba(0,0,0,0.62);
+$p-light-grey: rgba($black-black,0.62);
 $floralwhite:  #FFFAF0;
-$black: rgba(0, 0, 0, 0.12);
-$black-icon: rgba(0, 0, 0, 0.64);
-$american-violet: #551b8c;
+$black: rgba($black-black, 0.12);
+$black-icon: rgba($black-black, 0.64);
+$american-violet: #551B8c;
 $slate-blue: #6372F1;
 $grey: rgba(41,33,37,0.67);
+$black-black: rgb(0,0,0);
