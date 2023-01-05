@@ -14,8 +14,8 @@ export class SideBarComponent {
 
   ngOnInit() {
     this.items = [
-      {label: 'DashBoard', icon: 'pi pi-fw pi-microsoft'},
-      {label: 'List', icon: 'pi pi-fw pi-align-justify'},
+      // {label: 'DashBoard', icon: 'pi pi-fw pi-microsoft'},
+      // {label: 'List', icon: 'pi pi-fw pi-align-justify'},
       {label: 'Messages', icon: 'pi pi-fw pi-comment'},
       {label: 'Campaigns', icon: 'pi pi-fw pi-volume-up'}
     ];
@@ -45,4 +45,10 @@ export class SideBarComponent {
       }
     })
   }
+
+  list(): void {
+    this.router.navigate([`app-list/`])
+  }
+
+
 }
