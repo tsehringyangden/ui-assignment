@@ -7,8 +7,11 @@
   height: 68px;
   background-color: $floral-white;
   margin-bottom: 16px;
-  &--btn {
+  &__description {
     font-family: Roboto;
+    &-detail {
+      color: $black-62;
+    }
   }
 }
 
