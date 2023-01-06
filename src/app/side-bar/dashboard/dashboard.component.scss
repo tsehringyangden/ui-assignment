@@ -1,23 +1,17 @@
 @import 'src/assets/styles/variables';
 
-.sub-header-component {
-  margin-left: 24px;
-}
 .dashboard-container {
   width: auto;
   &__graph {
-    margin: 0 16px;
     background-color: $floral-white;
   }
   &__card-title {
       padding: 0 20px;
     &-detail {
-      margin-left: 4px;
       font-size: 20px;
     }
     }
   &__card-img {
-    margin-left: 24px;
     position: relative;
     height: 256px;
     &-caption {
@@ -28,10 +22,6 @@
       color: $white;
       background-color: $grey;
       height: 78px;
-    }
-
-    &-description {
-      margin-left: 16px;
     }
   }
 }

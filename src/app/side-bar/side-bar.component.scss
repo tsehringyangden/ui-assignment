@@ -12,17 +12,12 @@
     padding-bottom: 16px;
 
     &-icon {
-      margin-left: 24px;
       color: $slate-blue;
     }
 
     &-icon:hover {
       color: $american-violet;
     }
-  }
-
-  &__space {
-    margin-left: 8px;
   }
 
   &--icon {
@@ -33,13 +28,9 @@
     color: $american-violet;
   }
 
-  &__content {
-    margin-left: 24px;
-  }
 }
 .sidebar-hover:hover {
   background-color: $blue-12;
   color: $primary-color;
-  margin-right: 24px;
   border-radius: 4px;
 }

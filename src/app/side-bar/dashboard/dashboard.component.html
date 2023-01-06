@@ -1,16 +1,16 @@
 <app-header></app-header>
-<app-sub-header class="sub-header-component"></app-sub-header>
+<app-sub-header class="ml-24"></app-sub-header>
 <div class="dashboard-container">
   <div fxLayoutAlign="center center" class="width--full">
     <p>No. of contacts</p>
-    <div fxFlex="70" class="dashboard-container__graph">
+    <div fxFlex="70" class="dashboard-container__graph m-0 m-16">
       <p-chart type="line" [data]="lineStylesData" height="300" [options]="options"></p-chart>
     </div>
   </div>
   <p fxLayoutAlign="center center">Days [2022]</p>
   <div fxLayout="column">
     <div fxlayout="row" fxLayoutAlign="space-between center" class="dashboard-container__card-title">
-      <h5 class="dashboard-container__card-title-detail">How to use the portal</h5>
+      <h5 class="dashboard-container__card-title-detail ml-4">How to use the portal</h5>
       <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
         <p>3 of 4</p>
         <i class="pi pi-arrow-circle-left"></i>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div fxLayout="row">
-      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="24px" *ngFor="let item of [1, 2, 3, 4]" class="dashboard-container__card-img">
+      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="24px" *ngFor="let item of [1, 2, 3, 4]" class="dashboard-container__card-img ml-24">
         <p-image src="assets/image/dashboard-img.svg" alt="Image" width="340">
           <ng-template pTemplate="indicator">
             Indicator Content
@@ -26,11 +26,11 @@
         </p-image>
         <div fxLayout="column" class="dashboard-container__card-img-caption">
           <div fxFlex="30" fxLayout="row" fxLayoutGap="8px"
-               fxLayoutAlign="start center" class="dashboard-container__card-img-description">
+               fxLayoutAlign="start center" class="dashboard-container__card-img-description ml-16">
             <i class="pi pi-stopwatch"></i>
             <p>12 Min</p>
           </div>
-          <p class="dashboard-container__card-img-description">How to add list</p>
+          <p class="dashboard-container__card-img-description ml-16">How to add list</p>
         </div>
       </div>
     </div>

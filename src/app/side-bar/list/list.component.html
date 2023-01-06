@@ -1,6 +1,6 @@
 <app-list-header></app-list-header>
 <app-sub-header-list></app-sub-header-list>
-<div class="list-container">
+<div class="list-container ml-24">
   <p-table #dt [value]="users">
     <ng-template pTemplate="header">
       <tr>
@@ -31,7 +31,7 @@
   </p-table>
   <div fxLayout="row" fxLayoutGap="50%" class="list-container__paginator">
     <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="4px">
-      <p class="list-container__paginator-detail">Items per page: <b>10</b></p>
+      <p class="list-container__paginator-detail ml-16">Items per page: <b>10</b></p>
       <i class="pi pi-caret-down"></i>
     </div>
     <p-paginator class="list-container__pagination" [rows]="3" [totalRecords]="120"></p-paginator>

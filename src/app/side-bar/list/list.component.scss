@@ -2,11 +2,7 @@
 
 .list-container {
   width: 93rem;
-  margin-left: 24px;
   &__paginator {
     background-color: $floral-white;
-    &-detail {
-      margin-left: 16px;
-    }
   }
 }
