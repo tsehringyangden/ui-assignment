@@ -1,0 +1,7 @@
+@use './shared' as *;
+
+@include boxModel((0, 4, 8, 12, 16, 18, 20, 24),'p', 'padding');
+@include boxModel((12, 16),'pb', 'padding-bottom');
+@include boxModel((0),'pt', 'padding-top');
+@include boxModel((0,16),'pr', 'padding-right');
+@include boxModel((0),'pl', 'padding-left');

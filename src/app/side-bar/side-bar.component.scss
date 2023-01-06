@@ -1,7 +1,6 @@
 @import 'src/assets/styles/variables';
 
 .sidebar-container {
-  padding: 16px 0;
   border: 1px solid $black-12;
   width: 256px;
   height: 852px;
@@ -9,7 +8,6 @@
 
   &__contact {
     border-bottom: 1px solid $black-12;
-    padding-bottom: 16px;
 
     &-icon {
       color: $slate-blue;

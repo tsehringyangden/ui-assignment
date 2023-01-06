@@ -6,4 +6,4 @@
 @include boxModel((-8, 4, 16, 24), 'mb', 'margin-bottom');
 @include boxModel((8), 'mt', 'margin-top');
 @include boxModel((24), 'mx', ('margin-right', 'margin-left'));
-@include boxModel((), 'my', ('margin-top', 'margin-bottom'));
+@include boxModel((24), 'my', ('margin-top', 'margin-bottom'));
