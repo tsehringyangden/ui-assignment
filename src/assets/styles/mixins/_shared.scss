@@ -39,25 +39,3 @@
     }
   }
 }
-
-//mixin for chip
-@mixin chips($color, $background, $ver-size, $hor-size) {
-  padding: #{$ver-size * 0.0625}rem #{$hor-size * 0.0625}rem;
-  border-radius: 4px;
-  background: $background;
-  color: $color;
-}
-
-//ripple effect
-@mixin icon-button($color,$background,$ripple) {
-  .p-ink {
-    background: $ripple;
-  }
-  &:hover {
-    background: $background !important;
-    .pi {
-      transform: scale(1.04);
-      color: $color;
-    }
-  }
-}
