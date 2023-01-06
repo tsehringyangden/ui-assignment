@@ -5,21 +5,21 @@
   </div>
   <div fxFlex="96" fxLayout="column" fxLayoutAlign="space-between" class="sidebar-container__content">
     <div fxLayout="column">
-      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover" (click)="dashboard()">
+      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover cursor--pointer" (click)="dashboard()">
         <i class="pi pi-fw pi-microsoft"></i>
         <h5 class="sidebar-container__space">DashBoard</h5>
       </div>
-      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover" (click)="list()">
+      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover cursor--pointer" (click)="list()">
         <i class="pi pi-fw pi-align-justify"></i>
         <h5 class="sidebar-container__space">List</h5>
       </div>
-      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover" *ngFor="let item of items">
+      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover cursor--pointer" *ngFor="let item of items">
         <i class="sidebar-container__icon {{item.icon}}"></i>
         <h5 class="sidebar-container__space">{{item.label}}</h5>
       </div>
     </div>
     <div fxLayout="column" fxLayoutAlign="end start">
-      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover" *ngFor="let list of status">
+      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover cursor--pointer" *ngFor="let list of status">
         <i class="sidebar-container__icon {{list.icon}}"></i>
         <h5 class="sidebar-container__space">{{list.label}}</h5>
       </div>
