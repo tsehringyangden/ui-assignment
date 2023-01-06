@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {Router} from "@angular/router";
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-side-bar',
@@ -31,9 +31,7 @@ export class SideBarComponent {
         label: 'Help',
         icon: 'pi pi-fw pi-filter'
       },
-
     ]
-
   }
 
   list(): void {
@@ -43,4 +41,5 @@ export class SideBarComponent {
   dashboard(): void {
     this.router.navigateByUrl('dashboard')
   }
+
 }
