@@ -6,7 +6,7 @@ import {SplitButtonModule} from 'primeng/splitbutton';
 import {AccordionModule} from 'primeng/accordion';
 import {FormsModule} from '@angular/forms';
 import {TabMenuModule} from 'primeng/tabmenu';
-import {FlexModule} from '@angular/flex-layout';
+import {ExtendedModule, FlexModule} from '@angular/flex-layout';
 import {SideBarComponent} from './side-bar/side-bar.component';
 import {RatingModule} from 'primeng/rating';
 import { HeaderComponent } from './header/header.component';
@@ -35,24 +35,25 @@ import {ListHeaderComponent} from './side-bar/list/list-header/list-header.compo
     SubHeaderListComponent,
     ListHeaderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SplitButtonModule,
-    AccordionModule,
-    FormsModule,
-    TabMenuModule,
-    FlexModule,
-    RatingModule,
-    RippleModule,
-    ChartModule,
-    ImageModule,
-    TableModule,
-    CheckboxModule,
-    PaginatorModule,
-    InputTextModule,
-    AvatarModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        SplitButtonModule,
+        AccordionModule,
+        FormsModule,
+        TabMenuModule,
+        FlexModule,
+        RatingModule,
+        RippleModule,
+        ChartModule,
+        ImageModule,
+        TableModule,
+        CheckboxModule,
+        PaginatorModule,
+        InputTextModule,
+        AvatarModule,
+        ExtendedModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

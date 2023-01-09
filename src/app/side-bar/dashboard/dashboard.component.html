@@ -3,13 +3,13 @@
 <div class="dashboard-container">
   <div fxLayoutAlign="center center" class="width--full">
     <p>No. of contacts</p>
-    <div fxFlex="70" class="dashboard-container__graph m-0 m-16">
+    <div fxFlex="70" class="dashboard-container__graph m-16">
       <p-chart type="line" [data]="lineStylesData" height="300" [options]="options"></p-chart>
     </div>
   </div>
   <p fxLayoutAlign="center center">Days [2022]</p>
   <div fxLayout="column">
-    <div fxFlex="20px"l fxlayout="row" fxLayoutAlign="space-between center" class="dashboard-container__card-title p-0 p-20">
+    <div fxFlex="20px" fxlayout="row" fxLayoutAlign="space-between center" class="dashboard-container__card-title p-20">
       <h5 class="dashboard-container__card-title-detail ml-4">How to use the portal</h5>
       <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
         <p>3 of 4</p>
@@ -17,14 +17,14 @@
         <i class="pi pi-arrow-circle-right"></i>
       </div>
     </div>
-    <div fxLayout="row">
+    <div fxLayout="row" fxLayout.lt-sm="column">
       <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="24px" *ngFor="let item of [1, 2, 3, 4]" class="dashboard-container__card-img ml-24">
         <p-image src="assets/image/dashboard-img.svg" alt="Image" width="340">
           <ng-template pTemplate="indicator">
             Indicator Content
           </ng-template>
         </p-image>
-        <div fxLayout="column" class="dashboard-container__card-img-caption p-12 p-0 p-12 p-4">
+        <div fxLayout="column" class="dashboard-container__card-img-caption pr-0 py-12 pl-4">
           <div fxFlex="30" fxLayout="row" fxLayoutGap="8px"
                fxLayoutAlign="start center" class="dashboard-container__card-img-description ml-16">
             <i class="pi pi-stopwatch"></i>
