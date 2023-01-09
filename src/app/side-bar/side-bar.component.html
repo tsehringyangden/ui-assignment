@@ -1,20 +1,29 @@
 <div class="sidebar-container" fxflex="100" fxLayout="column">
-  <div fxFlex="4" fxLayout="row" fxLayoutAlign="start center" class="sidebar-container--contact">
-    <i class="sidebar-container--contact-icon pi pi-shield"></i>
-    <h3 class="sidebar-container--space">ContactBlaster</h3>
+  <div fxFlex="6" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="8px" class="sidebar-container__contact">
+    <i class="sidebar-container__contact-icon pi pi-shield ml-24"></i>
+    <h3 class="sidebar-container__space ml-8">ContactBlaster</h3>
   </div>
-  <div fxFlex="96" fxLayout="column" fxLayoutAlign="space-between" class="sidebar-container--content">
+  <div fxFlex="96" fxLayout="column" fxLayoutAlign="space-between" class="sidebar-container__content ml-24">
     <div fxLayout="column">
-      <div fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of items">
-        <i class="sidebar-container--icon {{item.icon}}"></i>
-        <h5 class="sidebar-container--space">{{item.label}}</h5>
+      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover cursor--pointer mr-24" (click)="dashboard()">
+        <i class="pi pi-fw pi-microsoft"></i>
+        <h5 class="sidebar-container__space ml-8">DashBoard</h5>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover cursor--pointer mr-24" (click)="list()">
+        <i class="pi pi-fw pi-align-justify"></i>
+        <h5 class="sidebar-container__space ml-8">List</h5>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover cursor--pointer mr-24" *ngFor="let item of items">
+        <i class="sidebar-container__icon {{item.icon}}"></i>
+        <h5 class="sidebar-container__space ml-8">{{item.label}}</h5>
       </div>
     </div>
     <div fxLayout="column" fxLayoutAlign="end start">
-      <div fxLayout="row" fxLayoutAlign="start center" *ngFor="let list of status">
-        <i class="sidebar-container--icon {{list.icon}}"></i>
-        <h5 class="sidebar-container--space">{{list.label}}</h5>
+      <div fxLayout="row" fxLayoutAlign="start center" class="sidebar-hover cursor--pointer mr-24" *ngFor="let list of status">
+        <i class="sidebar-container__icon {{list.icon}}"></i>
+        <h5 class="sidebar-container__space ml-8">{{list.label}}</h5>
       </div>
     </div>
   </div>
 </div>
+

@@ -1,8 +1,8 @@
-@import "src/assets/styles/variables";
+@import 'src/assets/styles/variables';
 
-.app-container {
-  background-color: rgba(0, 0, 0, 0.12);
+* {
+  overflow: hidden;
 }
-.sub-header-component {
-  margin-left: 24px;
+.app-container {
+  background-color: $black-12;
 }

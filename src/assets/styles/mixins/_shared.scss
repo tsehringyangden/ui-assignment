@@ -1,0 +1,41 @@
+// Typography
+@mixin typography($size, $line-height, $spacing) {
+  font-size: #{$size * 0.0625}rem !important;
+  letter-spacing: #{$spacing * 0.0625}rem !important;
+  line-height: #{$line-height * 0.0625}rem !important;
+}
+
+/* mixin to generate class for font-size and icon-size. */
+@mixin size($amount, $className) {
+  @each $size in $amount {
+    #{'.'+$className+ '-' + $size } {
+      font-size: #{$size * 0.0625}rem !important;
+
+      @if $className == 's' {
+        width: #{$size * 0.0625}rem !important;
+        height: #{$size * 0.0625}rem !important;
+      }
+    }
+  }
+}
+
+//margin, padding, border-radius, height
+@mixin boxModel($values, $className, $direction) {
+  @each $size in $values {
+    @if $size < 0 {
+      #{'.'+$className +'-'+'N'+-$size} {
+        @each $property in $direction {
+          #{$property}: #{$size}px !important;
+        }
+      }
+    }
+
+    @else {
+      #{'.'+$className +'-'+ $size} {
+        @each $property in $direction {
+          #{$property}: #{$size}px !important;
+        }
+      }
+    }
+  }
+}

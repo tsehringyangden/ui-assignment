@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-side-bar',
@@ -9,11 +10,10 @@ export class SideBarComponent {
   val1: any;
   items: any;
   status: any;
+  constructor(private router:Router) {}
 
   ngOnInit() {
     this.items = [
-      {label: 'DashBoard', icon: 'pi pi-fw pi-microsoft'},
-      {label: 'List', icon: 'pi pi-fw pi-align-justify'},
       {label: 'Messages', icon: 'pi pi-fw pi-comment'},
       {label: 'Campaigns', icon: 'pi pi-fw pi-volume-up'}
     ];
@@ -31,9 +31,15 @@ export class SideBarComponent {
         label: 'Help',
         icon: 'pi pi-fw pi-filter'
       },
-
     ]
+  }
 
+  list(): void {
+    this.router.navigate([`listing/`])
+  }
+
+  dashboard(): void {
+    this.router.navigateByUrl('dashboard')
   }
 
 }
