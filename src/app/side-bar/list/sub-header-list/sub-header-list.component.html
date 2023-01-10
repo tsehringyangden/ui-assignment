@@ -1,4 +1,4 @@
-<div fxlayout="row" fxLayoutAlign="space-between center" class="subheader-container ml-24 my-24 mb-16">
+<div fxlayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between center" class="subheader-container mx-24 my-24 mb-16">
   <div fxFlex="40" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="12px" class="subheader-container__content m-16">
     <p-avatar icon="pi pi-book" class="subheader-container__content-avatar"></p-avatar>
     <div class="subheader-container__content-header">
@@ -6,7 +6,7 @@
       <p class="subheader-container__content-sub-text">Here you will find all the list items in this system</p>
     </div>
   </div>
-  <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="16px" class="subheader-container__search cursor--pointer">
+  <div fxLayout="row" fxHide.lt-sm="true" fxLayoutAlign="end center" fxLayoutGap="16px" class="subheader-container__search cursor--pointer m-8">
     <span class="p-input-icon-right">
       <i class="pi pi-search"></i>
       <input type="text" pInputText placeholder="Search list by name" class="subheader-container__input--height"/>

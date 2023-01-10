@@ -1,6 +1,6 @@
 <app-header></app-header>
 <app-sub-header class="ml-24"></app-sub-header>
-<div class="dashboard-container">
+<div class="dashboard-container width--full">
   <div fxLayoutAlign="center center" class="width--full">
     <p>No. of contacts</p>
     <div fxFlex="70" class="dashboard-container__graph m-16">
@@ -24,7 +24,7 @@
             Indicator Content
           </ng-template>
         </p-image>
-        <div fxLayout="column" class="dashboard-container__card-img-caption pr-0 py-12 pl-4">
+        <div fxLayout="column" fxFlex="100" fxLayout.lt-sm="column" class="dashboard-container__card-img-caption pr-0 py-12 pl-4">
           <div fxFlex="30" fxLayout="row" fxLayoutGap="8px"
                fxLayoutAlign="start center" class="dashboard-container__card-img-description ml-16">
             <i class="pi pi-stopwatch"></i>

@@ -23,6 +23,7 @@ import {SubHeaderListComponent} from './side-bar/list/sub-header-list/sub-header
 import {InputTextModule} from 'primeng/inputtext';
 import {AvatarModule} from 'primeng/avatar';
 import {ListHeaderComponent} from './side-bar/list/list-header/list-header.component';
+import {SidebarModule} from "primeng/sidebar";
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import {ListHeaderComponent} from './side-bar/list/list-header/list-header.compo
         InputTextModule,
         AvatarModule,
         ExtendedModule,
+        SidebarModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
