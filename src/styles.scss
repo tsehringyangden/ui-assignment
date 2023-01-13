@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @use 'assets/styles/mixins/index' as *;
-@import "assets/styles/variables";
-@import "assets/styles/overwrite";
-@import "assets/styles/utilities";
+@import 'assets/styles/variables';
+@import 'assets/styles/overwrite';
+@import 'assets/styles/utilities';
 @import 'assets/styles/mixins/shared';
 @import 'assets/styles/common';

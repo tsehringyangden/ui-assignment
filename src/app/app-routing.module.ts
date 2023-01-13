@@ -7,8 +7,8 @@ import {SideBarComponent} from "./side-bar/side-bar.component";
 const routes: Routes = [
   { path: '', component: DashboardComponent},
   {path: 'dashboard', component: DashboardComponent},
-  { path: 'listing', component: ListComponent},
-  { path: 'sidebar', component: SideBarComponent}
+  {path: 'listing', component: ListComponent},
+  {path: 'sidebar', component: SideBarComponent}
 ];
 
 @NgModule({
