@@ -1,13 +1,16 @@
 <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-between" class="header-container
 px-24 mb-24">
   <div fxlayout="row" fxLayoutAlign="start center" fxLayoutGap="16px">
-    <span>
+    <span fxHide.lt-sm>
       <i class="pi pi-bars"></i>
       <i class="pi pi-angle-left"></i>
     </span>
+    <div fxHide.gt-md (click)="openSidebar()">
+      <i class="pi pi-bars"></i>
+    </div>
     <h4>DashBoard</h4>
   </div>
-  <div fxLayout="row" fxHide.lt-sm="true" fxLayoutAlign="end center" fxLayoutGap="16px" class="header-container__description">
+  <div fxLayout="row" fxHide.lt-sm fxLayoutAlign="end center" fxLayoutGap="16px" class="header-container__description">
     <div fxLayout="row" fxLayoutGap="4px" class="header-container__description-detail">
       <p><b>8752</b></p>
       <p>Avaliable Credits</p>
@@ -17,4 +20,5 @@ px-24 mb-24">
     <i class="pi pi-arrow-circle-right"></i>
   </div>
 </div>
+
 

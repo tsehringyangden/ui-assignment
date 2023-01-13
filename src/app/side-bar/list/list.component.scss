@@ -1,7 +1,11 @@
 @import 'src/assets/styles/variables';
+@import 'src/assets/styles/common';
 
 .list-container {
-  width: 1500px;
+  width: 97%;
+  &__table-header {
+    background-color: $black-12;
+  }
   &__paginator {
     background-color: $floral-white;
   }

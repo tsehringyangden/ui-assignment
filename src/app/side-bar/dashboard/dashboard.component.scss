@@ -1,21 +1,29 @@
 @import 'src/assets/styles/variables';
+@import 'src/assets/styles/common';
 
-.dashboard-container {
-  &__graph {
-    background-color: $floral-white;
-  }
-  &__card-title-detail {
-    font-size: 20px;
+.dashboard {
+  max-height: 95%;
+  overflow: auto;
+  .dashboard-container {
+    width: auto;
+
+    &__graph {
+      background-color: $floral-white;
     }
-  &__card-img {
-    position: relative;
-    height: 256px;
-    &-caption {
-      position: absolute;
-      bottom: 0;
-      color: $white;
-      background-color: $grey;
-      height: 78px;
+    &__card-title-detail {
+      font-size: 20px;
+    }
+    &__card-img {
+      position: relative;
+      height: 256px;
+      &-caption {
+        position: absolute;
+        width: 93%;
+        bottom: 0;
+        color: $white;
+        background-color: $grey;
+        height: 78px;
+      }
     }
   }
 }

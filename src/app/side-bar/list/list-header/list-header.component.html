@@ -1,9 +1,12 @@
 <div fxLayout="row wrap" fxLayout.lt-sm="column" fxFlex="100" fxLayoutAlign="space-between" class="header-container pr-24 mb-20">
   <div fxlayout="row" fxLayoutAlign="start center" fxLayoutGap="16px" class="ml-24">
-    <span>
+    <span fxHide.lt-sm>
       <i class="pi pi-bars "></i>
       <i class="pi pi-angle-left"></i>
     </span>
+    <div fxHide.gt-md>
+      <i class="pi pi-bars"></i>
+    </div>
     <h4>Manage List</h4>
   </div>
   <div fxLayout="row" fxHide.lt-sm="true" fxLayoutAlign="end center" fxLayoutGap="16px" class="header-container__description">

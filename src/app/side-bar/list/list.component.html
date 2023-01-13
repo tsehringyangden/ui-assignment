@@ -1,8 +1,8 @@
 <app-list-header></app-list-header>
 <app-sub-header-list></app-sub-header-list>
-<div fxLayout.lt-sm="row" class="list-container ml-24">
+<div class="list-container ml-24">
   <p-table #dt [value]="users">
-    <ng-template pTemplate="header">
+    <ng-template pTemplate="header" class="list-container__table-header">
       <tr>
         <th>
           <p-tableHeaderCheckbox data-cy="checkAll"></p-tableHeaderCheckbox>
@@ -31,8 +31,8 @@
   </p-table>
   <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between" class="list-container__paginator">
     <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="4px">
-      <p class="list-container__paginator-detail ml-16">Items per page: <b>10</b></p>
-      <i class="pi pi-caret-down"></i>
+      <p fxHide.lt-sm class="list-container__paginator-detail ml-16">Items per page: <b>10</b></p>
+      <i fxHide.lt-sm class="pi pi-caret-down"></i>
     </div>
     <p-paginator class="list-container__pagination" [rows]="3" [totalRecords]="120"></p-paginator>
   </div>

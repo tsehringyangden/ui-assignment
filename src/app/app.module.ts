@@ -11,7 +11,7 @@ import {SideBarComponent} from './side-bar/side-bar.component';
 import {RatingModule} from 'primeng/rating';
 import { HeaderComponent } from './header/header.component';
 import {RippleModule} from 'primeng/ripple';
-import { SubHeaderComponent } from './sub-header/sub-header.component';
+import {SubHeaderComponent} from './sub-header/sub-header.component';
 import {DashboardComponent} from './side-bar/dashboard/dashboard.component';
 import {ChartModule} from 'primeng/chart';
 import {ImageModule} from 'primeng/image';
@@ -23,7 +23,7 @@ import {SubHeaderListComponent} from './side-bar/list/sub-header-list/sub-header
 import {InputTextModule} from 'primeng/inputtext';
 import {AvatarModule} from 'primeng/avatar';
 import {ListHeaderComponent} from './side-bar/list/list-header/list-header.component';
-import {SidebarModule} from "primeng/sidebar";
+import {SidebarModule} from 'primeng/sidebar';
 
 @NgModule({
   declarations: [

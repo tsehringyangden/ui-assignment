@@ -1,9 +1,9 @@
 @import 'src/assets/styles/variables';
+@import 'src/assets/styles/common';
 
 .sidebar-container {
   border: 1px solid $black-12;
   background-color: $floral-white;
-  height: 100%;
   &__contact {
     border-bottom: 1px solid $black-12;
 

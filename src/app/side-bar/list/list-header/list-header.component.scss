@@ -1,9 +1,10 @@
 @import 'src/assets/styles/variables';
 @import 'src/assets/styles/font';
+@import 'src/assets/styles/common';
 
 .header-container {
   border: 1px solid $blue-12;
-  height: 62px;
+  height: 70px;
   background-color: $floral-white;
   &__description {
     &-detail {
