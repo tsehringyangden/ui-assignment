@@ -1,7 +1,10 @@
 @import 'src/assets/styles/variables';
 
 .list-container {
-  width: 1488px;
+  width: 97%;
+  &__table-header {
+    background-color: $black-12;
+  }
   &__paginator {
     background-color: $floral-white;
   }

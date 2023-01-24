@@ -1,9 +1,9 @@
 @use './shared' as *;
 
-@include boxModel((0, 16), 'm', 'margin');
-@include boxModel((24), 'mr', 'margin-right');
-@include boxModel((4, 8, 16, 24), 'ml', 'margin-left');
-@include boxModel((-8, 4, 16, 24), 'mb', 'margin-bottom');
+@include boxModel((0, 8, 16, 24), 'm', 'margin');
+@include boxModel((8,24,40), 'mr', 'margin-right');
+@include boxModel((4, 8, 16, 24, 40), 'ml', 'margin-left');
+@include boxModel((-8, 4, 16,20, 24), 'mb', 'margin-bottom');
 @include boxModel((8), 'mt', 'margin-top');
 @include boxModel((24), 'mx', ('margin-right', 'margin-left'));
-@include boxModel((), 'my', ('margin-top', 'margin-bottom'));
+@include boxModel((24), 'my', ('margin-top', 'margin-bottom'));

@@ -1,0 +1,9 @@
+@use './shared' as *;
+
+@include boxModel((0, 4, 8, 12, 16, 18, 20, 24),'p', 'padding');
+@include boxModel((10 ,12, 16,20,  24),'pb', 'padding-bottom');
+@include boxModel((0,10),'pt', 'padding-top');
+@include boxModel((0,16),'pr', 'padding-right');
+@include boxModel((0,4),'pl', 'padding-left');
+@include boxModel((0, 4, 6, 8, 10, 12, 16, 18, 24, 28, 30, 40),'px', ('padding-right', 'padding-left'));
+@include boxModel((0, 4, 6, 8, 10, 12, 16, 20, 22, 24, 36, 40),'py', ('padding-top', 'padding-bottom'));

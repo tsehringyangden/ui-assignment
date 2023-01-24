@@ -6,12 +6,12 @@ import {SplitButtonModule} from 'primeng/splitbutton';
 import {AccordionModule} from 'primeng/accordion';
 import {FormsModule} from '@angular/forms';
 import {TabMenuModule} from 'primeng/tabmenu';
-import {FlexModule} from '@angular/flex-layout';
+import {ExtendedModule, FlexModule} from '@angular/flex-layout';
 import {SideBarComponent} from './side-bar/side-bar.component';
 import {RatingModule} from 'primeng/rating';
 import { HeaderComponent } from './header/header.component';
 import {RippleModule} from 'primeng/ripple';
-import { SubHeaderComponent } from './sub-header/sub-header.component';
+import {SubHeaderComponent} from './sub-header/sub-header.component';
 import {DashboardComponent} from './side-bar/dashboard/dashboard.component';
 import {ChartModule} from 'primeng/chart';
 import {ImageModule} from 'primeng/image';
@@ -23,6 +23,7 @@ import {SubHeaderListComponent} from './side-bar/list/sub-header-list/sub-header
 import {InputTextModule} from 'primeng/inputtext';
 import {AvatarModule} from 'primeng/avatar';
 import {ListHeaderComponent} from './side-bar/list/list-header/list-header.component';
+import {SidebarModule} from 'primeng/sidebar';
 
 @NgModule({
   declarations: [
@@ -35,24 +36,26 @@ import {ListHeaderComponent} from './side-bar/list/list-header/list-header.compo
     SubHeaderListComponent,
     ListHeaderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SplitButtonModule,
-    AccordionModule,
-    FormsModule,
-    TabMenuModule,
-    FlexModule,
-    RatingModule,
-    RippleModule,
-    ChartModule,
-    ImageModule,
-    TableModule,
-    CheckboxModule,
-    PaginatorModule,
-    InputTextModule,
-    AvatarModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        SplitButtonModule,
+        AccordionModule,
+        FormsModule,
+        TabMenuModule,
+        FlexModule,
+        RatingModule,
+        RippleModule,
+        ChartModule,
+        ImageModule,
+        TableModule,
+        CheckboxModule,
+        PaginatorModule,
+        InputTextModule,
+        AvatarModule,
+        ExtendedModule,
+        SidebarModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,27 +1,30 @@
 @import 'src/assets/styles/variables';
 
-.dashboard-container {
-  width: auto;
-  &__graph {
-    background-color: $floral-white;
-  }
-  &__card-title {
-      padding: 0 20px;
-    &-detail {
+.dashboard {
+  max-height: 95%;
+  overflow: auto;
+  .dashboard-container {
+    width: auto;
+
+    &__graph {
+      background-color: $floral-white;
+    }
+    &__card-title-detail {
       font-size: 20px;
     }
-    }
-  &__card-img {
-    position: relative;
-    height: 256px;
-    &-caption {
-      position: absolute;
-      width: 93%;
-      bottom: 0;
-      padding: 12px 0 12px 4px;
-      color: $white;
-      background-color: $grey;
-      height: 78px;
+    &__card-img {
+      position: relative;
+      height: 256px;
+      width: 355px;
+      
+      &-caption {
+        position: absolute;
+        width: 93%;
+        bottom: 0;
+        color: $white;
+        background-color: $grey;
+        height: 78px;
+      }
     }
   }
 }
